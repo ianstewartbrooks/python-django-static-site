@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Home Page</h1>
+
+<div class="card" style="width: 18rem; background-color: whitesmoke">
+    <img class="card-img-top rounded" style="padding: 0.5rem;" src="{% static 'images/ian-club-sitting.jpg' %}" alt="image - Ian sitting in the club">
+    <div class="card-body">
+        <h5 class="card-title">Ian Brooks</h5>
+        <p class="card-text">Ian sitting in the goth club way back in the early 2000's. Those were good days!</p>
+        <a href="{% url 'about' %}" class="btn btn-dark">About Me</a>
+    </div>
+</div>
+
+<!--<p>{{ out_text }}</p> -->
+
+{% endblock %}
